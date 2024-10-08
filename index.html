@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Spinner</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #282c34;
+        }
+
+        .spinner {
+            width: 80px; /* Spinner width */
+            height: 80px; /* Spinner height */
+            border: 8px solid #29a19c; /* Spinner border color */
+            border-top: 8px solid transparent; /* Top border color */
+            border-radius: 50%; /* Circular shape */
+            animation: spin 1s linear infinite; /* Spinning animation */
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="spinner"></div>
+</body>
+</html>
